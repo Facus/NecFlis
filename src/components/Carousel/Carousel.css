@@ -1,0 +1,11 @@
+.carousel-container {
+    padding: 0 50px;
+}
+
+.carousel-title{
+    margin: 0.2em;
+}
+
+.slick-track {
+    padding-bottom: 10px;
+}

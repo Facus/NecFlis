@@ -1,51 +1,38 @@
 import './App.css';
-import profile from "./profile.png";
-import billboard from "./billboard.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faBell, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import "@fontsource/bebas-neue";
+import Navbar from './components/Navbar/Navbar';
+import Billboard from './components/Billboard/Billboard';
+import Carousel from './components/Carousel/Carousel';
+import { apiCategory } from './apiConfig';
+import Separator from './components/Separator/Separator';
 
 function App() {
   return (
     <div className="container">
       
-      <div className="navbar">
-        <div className='navbar-container'>
-          <div className="navbar-firsts-elements">
-            <div className="logo">
-              Necflis
-            </div>
-              
-            <div className="nav-text-element">Inicio</div>
-            <div className="nav-text-element">Series</div>
-            <div className="nav-text-element">Películas</div>
-            <div className="nav-text-element">Novedades Populares</div>
-            <div className="nav-text-element">Mi lista</div>
-            
+      <Navbar />
 
-          </div>
-          <div className='navbar-end-elements'>
-            <div className="nav-element">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </div>
-            <div className="nav-text-element"> Niños </div>
-            <div className="nav-element">
-              <FontAwesomeIcon icon={faBell} />            
-            </div>
-            <div className="nav-element">
-              <img src={profile} alt="" />
-              <span className='caret-down'><FontAwesomeIcon icon={faCaretDown} /></span>
-            </div>
-            <div className="nav-element">
-            </div>
-          </div>
-        </div>
-      </div>
+      <Billboard />
 
-      <div className='main-view'>
-        <img className='billboard-img' src={billboard} alt="" />
+      <Separator height={"30px"} />
+      
+      <Carousel title="Películas Populares" category={apiCategory.popularMovies}/>
 
-      </div>
+      <Separator height={"30px"} />
+
+      <Carousel title="Películas Mejor Valoradas" category={apiCategory.topRatedMovies}/>
+
+      <Separator height={"30px"} />
+
+      <Carousel title="Programas de TV Populares" category={apiCategory.popularTv}/>
+
+      <Separator height={"30px"} />
+
+      <Carousel title="Programas de TV Mejor Valorados" category={apiCategory.topRatedTv}/>
+
+      <Separator height={"40px"} />
+
+      
       
     </div>
   );

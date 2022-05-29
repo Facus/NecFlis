@@ -1,0 +1,74 @@
+
+.billboard {
+    width: 100%;
+    height: 70vh;
+    /* background-image: url("billboard.jpg"); */
+    background-size: cover;
+    background-position: center top;  
+    background-repeat: no-repeat;
+    border: 0;
+    font-weight: bold;
+    color: #fff;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 9em;
+  }
+  
+  .billboard-title {
+    padding: 10px 50px;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  .billboard-description {
+    padding: 10px 50px;
+    width: 50%;
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  .billboard-btns {
+    padding: 10px 50px;
+    display: flex;
+    width: 50%;
+  }
+  
+  .billboard-btn-1 {
+    padding: 10px 10px;
+    width: 100%;
+    border: solid #ccc 1px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #141414;
+    text-align: center;
+  }
+  
+  .billboard-btn-1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .billboard-btn-2 {
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0 5px;
+    border: solid #888 1px;  
+    background-color: rgba(170, 170, 170, 1);
+    color: #141414;
+    text-align: center;
+  }
+  
+  .billboard-btn-2:hover {
+    background-color: rgba(170, 170, 170, 0.8);
+  }
+  
+  .billboard-btn-mute {
+    padding: 10px 50px 10px 10px;
+    /* border: solid #888 1px;  
+    background-color: rgba(170, 170, 170, 0.8); */
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .billboard-btn-mute:hover {
+    color: white;
+  }
