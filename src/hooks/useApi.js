@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { randomIndex } from '../utils/utils'
-import { tryGetMedias, tryGetBillboardImg } from '../apiConfig'
+import { tryGetMedias} from '../apiConfig'
 
 const useApi = (category) => {
 
@@ -26,8 +25,8 @@ const useApi = (category) => {
     };
 
     useEffect(() => {
-        getData();
-    }, []);
+        getData(); // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []); 
 
 
 

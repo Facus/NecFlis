@@ -22,7 +22,7 @@ const Carousel = ({title, category}) => {
                     />
                 ))
             )}
-            
+            {error && console.log(error)}
         </Slider>
       </div>
   )

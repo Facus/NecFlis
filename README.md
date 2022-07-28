@@ -1,3 +1,15 @@
+# NecFlis
+
+A clone of Netflix for educational purposes.\
+This project was made with React and the information of the movies are from themoviedb.org API.
+
+
+## Demo
+
+To see a demo of the project you can visit this link: [https://necflis.netlify.app/](https://necflis.netlify.app/)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

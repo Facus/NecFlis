@@ -26,7 +26,11 @@ const Billboard = () => {
                     <div className='billboard-description'>{loading? `Cargando... ${error}` : randomMovie?.overview}</div>
                     <div className='billboard-btns'>
                         <div className='billboard-btn-1'><FontAwesomeIcon icon={faPlay} /> Reproducir</div>
-                        <div className='billboard-btn-2'><FontAwesomeIcon icon={faCircleInfo} /> Más información</div>
+                        <div className='billboard-btn-2'
+                            onClick={() => {
+                                console.log(movies);
+                            }}
+                        ><FontAwesomeIcon icon={faCircleInfo} /> Más información</div>
                     </div>
                 </div>
                 <div className='billboard-btn-mute'><FontAwesomeIcon icon={faVolumeHigh} /></div>
